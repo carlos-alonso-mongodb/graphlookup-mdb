@@ -2,6 +2,12 @@
 
 In this repo you'll learn how to implement a graph use case in MongoDB Atlas through 3 examples.
 
+<h3>Example 1</h3>
+
+<h3>Example 2</h3>
+
+<h3>Example 3</h3>
+
 <p> Atlas Search Store implements many Atlas Search features from autocomplete to custom function scoring. Using the $search operator in a MongoDB aggregation pipeline, we can build fine-grained searches across text, numerics, and geospatial data. By building out this application, you'll learn all sorts of ways MongoDB allows you to build complex, fine-grained full-text searches on your Atlas data.</p>
 
 **No additional servers or software needed. No need to keep data in sync. Everything is done in MongoDB Atlas.**
