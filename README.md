@@ -1,6 +1,6 @@
 ## Graph use case in MongoDB 
 
-In this repo you'll learn how to implement a graph use case in MongoDB Atlas through 3 examples.
+In this repo you'll learn how to implement a graph use case in MongoDB Atlas through 3 examples. For more information about the operator,please ,visit our [documentation] (https://www.mongodb.com/docs/manual/reference/operator/aggregation/graphLookup/)
 
 ## Setup
 
@@ -16,7 +16,8 @@ __2. Download Compass__
 <h3>Example 1: Reporting Hierarchy</h3>
 
 * Create a new database called "graph"
-* Create a new collection called "employees" and import the collection "graph.employees.json"__
+* Create a new collection called "employees" and import the collection "graph.employees.json"
+* 
 
 <h3>Example 2</h3>
 
