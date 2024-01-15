@@ -28,6 +28,22 @@ __2. Download Compass__
   depthField: "depth",
   as: "reportingHierarchy",
 }
+```
+* The operation also could be ran from MongoDB shell
+
+```js
+db.employees.aggregate( [
+   {
+      $graphLookup: {
+         from: "employees",
+         startWith: "$reportsTo",
+         connectFromField: "reportsTo",
+         connectToField: "name",
+         as: "reportingHierarchy"
+      }
+   }
+] )
+```
 
 <h3>Example 2</h3>
 
