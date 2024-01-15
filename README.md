@@ -15,6 +15,10 @@ __2. Download Compass__
 
 <h3>Example 1: Reporting Hierarchy</h3>
 
+This example traverse the graph formed by all the nodes present at collection "employees". This graph is shown in the picture below
+
+![image1](img/graph1.png "image1")
+
 * Create a new database called "graph"
 * Create a new collection called "employees" and import the collection "graph.employees.json"
 * If you are using compass, select the collection "employees", go to the tab "Aggregation", select the stage $graphloolup and paste following code:
