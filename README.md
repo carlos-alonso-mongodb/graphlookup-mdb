@@ -33,7 +33,7 @@ This example traverse the graph formed by all the nodes present at collection "e
   as: "reportingHierarchy",
 }
 ```
-* The operation also could be ran from MongoDB shell
+* The operation also could be executed from MongoDB shell
 
 ```js
 db.employees.aggregate( [
