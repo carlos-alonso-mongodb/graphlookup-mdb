@@ -5,7 +5,7 @@ In this repo you'll learn how to implement a graph use case in MongoDB Atlas thr
 ## Setup
 
 __1. Configure Atlas Environment__
-* Create an Atlas account [Atlas account](http://cloud.mongodb.com) 
+* Create an Atlas account [Atlas account](http://cloud.mongodb.com). I case you can use an existing Atlas environment you can skip this step.
 * Create an __M0__ based 3 node replica-set in a single cloud provider region of your choice with default settings
 * In the Security tab, add a new __IP Whitelist__ for your laptop's current IP address
 * In the Atlas console, for the database cluster you deployed, click the __Connect button__, select __Connect from Compass__
@@ -15,7 +15,8 @@ __2. Download Compass__
 
 <h3>Example 1: Reporting Hierarchy</h3>
 
-
+__1. Create a new database called "graph"__
+__2. Create a new collection called "employees" and import the collection "graph.employees.json"__
 
 <h3>Example 2</h3>
 
