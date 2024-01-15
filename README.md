@@ -17,7 +17,17 @@ __2. Download Compass__
 
 * Create a new database called "graph"
 * Create a new collection called "employees" and import the collection "graph.employees.json"
-* 
+* If you are using compass, select the collection "employees", go to the tab "Aggregation", select the stage $graphloolup and paste following code:
+
+```js
+{
+  from: "employees",
+  startWith: "$reportsTo",
+  connectFromField: "reportsTo",
+  connectToField: "name",
+  depthField: "depth",
+  as: "reportingHierarchy",
+}
 
 <h3>Example 2</h3>
 
