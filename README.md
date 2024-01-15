@@ -15,8 +15,8 @@ __2. Download Compass__
 
 <h3>Example 1: Reporting Hierarchy</h3>
 
-__1. Create a new database called "graph"__
-__2. Create a new collection called "employees" and import the collection "graph.employees.json"__
+* Create a new database called "graph"
+* Create a new collection called "employees" and import the collection "graph.employees.json"__
 
 <h3>Example 2</h3>
 
