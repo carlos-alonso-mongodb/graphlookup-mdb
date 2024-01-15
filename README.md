@@ -2,6 +2,20 @@
 
 In this repo you'll learn how to implement a graph use case in MongoDB Atlas through 3 examples.
 
+<h3>Setup</h3>
+
+1. Configure Laptop
+
+Ensure MongoDB version 3.6+ is already installed your laptop, mainly to enable MongoDB command line tools to be used (no MongoDB databases will be run on the laptop for this proof)
+Download and install Compass on your laptop
+2. Configure Atlas Environment
+
+Log-on to your Atlas account (using the MongoDB SA preallocated Atlas credits system) and navigate to your SA project
+In the project's Security tab, choose to add a new user called main_user, and for User Privileges specify Atlas Admin (make a note of the password you specify)
+Create an M10 based 3 node replica-set in a single cloud provider region of your choice with default settings (auditing is not available for tiers lower than M10)
+In the Security tab, add a new IP Whitelist for your laptop's current IP address
+In the Atlas console, for the database cluster you deployed, click the Connect button, select Connect with the Mongo Shell, and in the Run your connection string in your command line section copy the connection command line - make a note of this connection command line to be used later
+
 <h3>Example 1</h3>
 
 <h3>Example 2</h3>
