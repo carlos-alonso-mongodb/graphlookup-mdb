@@ -1,12 +1,6 @@
 ## Graph use case in MongoDB 
 
-In this repo you'll learn how to implement a graph use case in MongoDB Atlas.
-
-<br/>
-<div align="center">
-<img src="ECommerce.png" width="450"  />
-</div>
-<br/>
+In this repo you'll learn how to implement a graph use case in MongoDB Atlas through 3 examples.
 
 <p> Atlas Search Store implements many Atlas Search features from autocomplete to custom function scoring. Using the $search operator in a MongoDB aggregation pipeline, we can build fine-grained searches across text, numerics, and geospatial data. By building out this application, you'll learn all sorts of ways MongoDB allows you to build complex, fine-grained full-text searches on your Atlas data.</p>
 
