@@ -1,6 +1,6 @@
 ## Graph use case in MongoDB 
 
-In this repo you'll learn how to implement a graph use case in MongoDB Atlas through 3 examples. For more information about the operator,please ,visit our [documentation] (https://www.mongodb.com/docs/manual/reference/operator/aggregation/graphLookup/)
+In this repo you'll learn how to implement a graph use case in MongoDB Atlas through 3 examples. For more information about the operator,please ,visit our [documentation](https://www.mongodb.com/docs/manual/reference/operator/aggregation/graphLookup/) 
 
 ## Setup
 
