@@ -56,6 +56,7 @@ db.employees.aggregate( [
 The following example uses a collection with a set of documents containing names of people along with arrays of their friends and their hobbies. An aggregation operation finds one particular person and traverses her network of connections to find people who list golf among their hobbies.
 
 <h4> Steps To Run </h4>
+
 * Create a new collection called "hobbies" and import the collection "graph.hobbies.json"
 * If you are using compass, select the collection "hobbies", go to the tab "Aggregation", and create 3 stages:
   * $match
