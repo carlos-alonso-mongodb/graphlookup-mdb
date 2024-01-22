@@ -109,7 +109,8 @@ Similar to the book's example, amongst the many persons records stored in MongoD
 <h4> Steps To Run </h4>
 
 * Create two new collection called "persons" and "places", and import the collections "graph.persons.json" (you need to unzip the file "graph.persons.json.zip previously") and "graph.places.json".
-* Define index ready for use by the subsequent graphlookups. You can find an example below creating the index through mongoshell:
+* The code you'll find here use mongoshell syntax, but you can also use MongoDB Compass or any driver to run the code. 
+* Define index ready for use by the subsequent graphlookups:
    ```js
     db.places.createIndex({name: 1})
    ```
