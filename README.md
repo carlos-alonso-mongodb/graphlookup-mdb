@@ -113,7 +113,11 @@ Similar to the book's example, amongst the many persons records stored in MongoD
    ```js
     db.places.createIndex({name: 1})
    ```
-    // Example: Find birth location line for Lucy Smith
+* You can find below two aggreagation examples for graph traversal in two collections:
+
+  * Aggregation 1 example: Find birth location line for Lucy Smith
+    
+  ```js
     db.persons.aggregate([
         {$match: {fullname: 'Lucy Smith'}},
         {$graphLookup: {
@@ -125,9 +129,11 @@ Similar to the book's example, amongst the many persons records stored in MongoD
             as: 'birth_location_line'
         }}
     ]).pretty()
-
-    // Example: Find people who emigrated from 'United States of America'
+  ```
+  * Aggreagtion 2 example: Find people who emigrated from 'United States of America'
     // (born in) to 'Europe' (lives in)
+    
+  ```js
     var born = 'United States of America', lives = 'Europe'
     db.persons.aggregate([
         {$graphLookup: {
@@ -155,8 +161,9 @@ Similar to the book's example, amongst the many persons records stored in MongoD
             lives_in: 1, 
         }}
     ])
+  ```
 
-Example Output:
+  * Aggregation 2 example Output:
 
     { "lives_in" : "England", "fullname" : "Lucy Smith", "born_in" : "Idaho" }
     { "lives_in" : "Eastern Europe", "fullname" : "Travis Mc243", "born_in" : "West Virginia" }
