@@ -165,16 +165,16 @@ Similar to the book's example, amongst the many persons records stored in MongoD
 
   * Aggregation 2 example Output:
   ```js
-    { "lives_in" : "England", "fullname" : "Lucy Smith", "born_in" : "Idaho" }
-    { "lives_in" : "Eastern Europe", "fullname" : "Travis Mc243", "born_in" : "West Virginia" }
-    { "lives_in" : "Trenciansky kraj", "fullname" : "Simon Mc1093", "born_in" : "South Dakota" }
-    { "lives_in" : "Lovrenc na Pohorju", "fullname" : "Sandy Mc1666", "born_in" : "Connecticut" }
-    { "lives_in" : "Jonkopings lan", "fullname" : "Gertrude Mc1718", "born_in" : "Alaska" }
-    { "lives_in" : "Sofia", "fullname" : "Bobby Mc1810", "born_in" : "California" }
-    { "lives_in" : "Ilinden", "fullname" : "Simon Mc1839", "born_in" : "North Carolina" }
-    { "lives_in" : "Zebbug Gozo", "fullname" : "Sandy Mc2165", "born_in" : "Texas" }
-    { "lives_in" : "Planken", "fullname" : "Gertrude Mc2869", "born_in" : "United States of America" }
-    { "lives_in" : "Gradsko", "fullname" : "David Mc2409", "born_in" : "Michigan" }
-    .......
-    .......
+  { "lives_in" : "England", "fullname" : "Lucy Smith", "born_in" : "Idaho" }
+  { "lives_in" : "Eastern Europe", "fullname" : "Travis Mc243", "born_in" : "West Virginia" }
+  { "lives_in" : "Trenciansky kraj", "fullname" : "Simon Mc1093", "born_in" : "South Dakota" }
+  { "lives_in" : "Lovrenc na Pohorju", "fullname" : "Sandy Mc1666", "born_in" : "Connecticut" }
+  { "lives_in" : "Jonkopings lan", "fullname" : "Gertrude Mc1718", "born_in" : "Alaska" }
+  { "lives_in" : "Sofia", "fullname" : "Bobby Mc1810", "born_in" : "California" }
+  { "lives_in" : "Ilinden", "fullname" : "Simon Mc1839", "born_in" : "North Carolina" }
+  { "lives_in" : "Zebbug Gozo", "fullname" : "Sandy Mc2165", "born_in" : "Texas" }
+  { "lives_in" : "Planken", "fullname" : "Gertrude Mc2869", "born_in" : "United States of America" }
+  { "lives_in" : "Gradsko", "fullname" : "David Mc2409", "born_in" : "Michigan" }
+  .......
+  .......
   ```
