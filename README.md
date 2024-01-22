@@ -164,7 +164,7 @@ Similar to the book's example, amongst the many persons records stored in MongoD
   ```
 
   * Aggregation 2 example Output:
-
+  ```js
     { "lives_in" : "England", "fullname" : "Lucy Smith", "born_in" : "Idaho" }
     { "lives_in" : "Eastern Europe", "fullname" : "Travis Mc243", "born_in" : "West Virginia" }
     { "lives_in" : "Trenciansky kraj", "fullname" : "Simon Mc1093", "born_in" : "South Dakota" }
@@ -177,4 +177,4 @@ Similar to the book's example, amongst the many persons records stored in MongoD
     { "lives_in" : "Gradsko", "fullname" : "David Mc2409", "born_in" : "Michigan" }
     .......
     .......
-
+  ```
