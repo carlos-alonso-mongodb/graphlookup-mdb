@@ -19,6 +19,8 @@ This example traverse the graph formed by all the nodes present at collection "e
 
 <img src="img/graph1.png" width="500">
 
+<h4> Steps To Run </h4>
+  
 * Create a new database called "graph"
 * Create a new collection called "employees" and import the collection "graph.employees.json"
 * If you are using compass, select the collection "employees", go to the tab "Aggregation", select the stage $graphloolup and paste following code:
@@ -53,6 +55,7 @@ db.employees.aggregate( [
 
 The following example uses a collection with a set of documents containing names of people along with arrays of their friends and their hobbies. An aggregation operation finds one particular person and traverses her network of connections to find people who list golf among their hobbies.
 
+<h4> Steps To Run </h4>
 * Create a new collection called "hobbies" and import the collection "graph.hobbies.json"
 * If you are using compass, select the collection "hobbies", go to the tab "Aggregation", and create 3 stages:
   * $match
@@ -101,25 +104,15 @@ Similar to the book's example, amongst the many persons records stored in MongoD
     {fullname: 'Lucy Smith',   born_in: 'Idaho',                   lives_in: 'England'}
     {fullname: 'Alain Chirac', born_in: 'Bourgogne-Franche-Comte', lives_in: 'England'}
 
-<img src="img/ejemplo3.png" width="500">
+<img src="img/graph3.png" width="500">
 
-## Steps To Run
+<h4> Steps To Run </h4>
 
-_Note: It is assumed that you've already installed MongoDB (version 3.6 or greater) on a laptop/workstation, you've already started running a MongoDB database instance and you are familiar with using MongoDB's command line tools._
-
-    # Unzip places.json.zip & persons.json.zip first, then import:
-    $ mongoimport -d placedata -c places --type json places.json
-    $ mongoimport -d placedata -c persons --type json persons.json
-
-    $ mongo
-
-    use placedata
-
-    // Define index ready for use by the subsequent graph lookups
-    // (with the index in place the main scenario takes around 2 
-    //  seconds to run versus ~45 seconds if no index is defined)
+* Create two new collection called "persons" and "places", and import the collections "graph.persons.json" (you need to unzip the file "graph.persons.json.zip previously") and "graph.places.json".
+* Define index ready for use by the subsequent graphlookups. You can find an example below creating the index through mongoshell:
+   ```js
     db.places.createIndex({name: 1})
-
+   ```
     // Example: Find birth location line for Lucy Smith
     db.persons.aggregate([
         {$match: {fullname: 'Lucy Smith'}},
